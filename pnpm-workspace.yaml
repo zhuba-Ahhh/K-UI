@@ -1,0 +1,4 @@
+packages:
+  - play #存放测试组件代码
+  - docs #存放组件文档的
+  - "packages/**"
