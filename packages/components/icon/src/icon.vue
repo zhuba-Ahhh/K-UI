@@ -20,11 +20,12 @@ defineOptions({
 
 // 计算属性来处理样式
 const style = computed<CSSProperties>(() => {
-  if (!props.size && !props.color) return {};
+  const { size, color } = props;
+  if (!size && !color) return {};
 
   return {
-    ...(props.size ? { "font-size": props.size + "px" } : {}),
-    ...(props.color ? { color: props.color } : {}),
+    ...(size ? { "font-size": size + "px" } : {}),
+    ...(color ? { color: color } : {}),
   };
 });
 </script>

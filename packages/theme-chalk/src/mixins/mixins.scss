@@ -1,0 +1,43 @@
+@use 'config' as *;
+@forward 'config';
+
+// .k-button{}
+@mixin b($block) {
+  $B: $namespace + '-' + $block;
+  .#{$B} {
+    @content;
+  }
+}
+
+// .k-button.is-xxx
+@mixin when ($state) {
+  @at-root {
+    &.#{$state-prefix + $state} {
+      @content;
+    }
+  }
+}
+
+// &--primary => .k-button--primary
+@mixin m($modifier) {
+  @at-root {
+    #{& + $modifier-separator + $modifier} {
+      @content;
+    }
+  }
+}
+
+// &__header => .k-button__header
+@mixin e($element) {
+  @at-root {
+    #{& + $element-separator + $element} {
+      @content;
+    }
+  }
+}
+
+
+// 使用方法 调用函数并传参
+@include b(button) {
+  color: red;
+}
