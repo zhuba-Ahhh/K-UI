@@ -1,14 +1,14 @@
-import { createApp } from "vue";
-import App from "./App.vue";
+import { createApp } from 'vue'
+import App from './App.vue'
 
-import Icon from "@k-ui/components/icon";
-import "@k-ui/theme-chalk/src/index.scss";
+import KIcon from '@k-ui/components/icon'
+import '@k-ui/theme-chalk/src/index.scss'
 
-const app = createApp(App);
-const plugins = [Icon];
+const app = createApp(App)
+const plugins = [KIcon]
 
-plugins.forEach((plugin) => {
-  app.use(plugin);
-});
+plugins.forEach(plugin => {
+  app.use(plugin)
+})
 
-app.mount("#app");
+app.mount('#app')

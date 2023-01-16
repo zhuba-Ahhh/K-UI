@@ -7,7 +7,8 @@
   "scripts": {
     "commit": "git cz",
     "prepare": "husky install",
-    "dev": "pnpm -C play dev"
+    "dev": "pnpm -C play dev",
+    "docs:dev": "pnpm -C docs dev"
   },
   "keywords": [],
   "author": "",
@@ -16,14 +17,25 @@
     "@k-ui/components": "workspace:^1.0.0",
     "@k-ui/theme-chalk": "workspace:^1.0.0",
     "@k-ui/utils": "workspace:^1.0.0",
+    "async-validator": "^4.2.5",
     "typescript": "^4.9.4",
     "vue": "^3.2.45"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "@vue/eslint-config-typescript": "^11.0.2",
     "commitizen": "^4.2.6",
     "cz-git": "^1.4.1",
-    "husky": "^8.0.0",
+    "eslint": "^8.32.0",
+    "eslint-plugin-vue": "^9.9.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "mrm": "^4.1.13",
     "sass": "^1.57.1",
     "unplugin-vue-define-options": "^1.1.4"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
   }
 }

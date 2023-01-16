@@ -118,3 +118,6 @@ module.exports = {
     defaultSubject: ''
   }
 }
+
+
+pnpm uninstall @commitlint / cli @commitlint / config -conventional -D
