@@ -13,9 +13,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@k-ui/components": "workspace:^1.0.0",
-    "@k-ui/theme-chalk": "workspace:^1.0.0",
-    "@k-ui/utils": "workspace:^1.0.0",
+    "@k-ui/components": "workspace:*",
+    "@k-ui/theme-chalk": "workspace:*",
+    "@k-ui/utils": "workspace:*",
     "typescript": "^4.9.4",
     "vue": "^3.2.45"
   },
