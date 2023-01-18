@@ -1,0 +1,36 @@
+name: Z-UI npm
+
+on:
+  push:
+    # master 分支有 push 时触发
+    branches: [main]
+
+jobs:
+  deploy:
+    # 指定虚拟机环境
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x]
+
+    steps:
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install
+        run: npm install
+
+    #   - name: Build
+    #     # 打包
+    #     run: npm run build
+
+    #   - name: Deploy
+    #     uses: JamesIves/github-pages-deploy-action@v4
+    #     with:
+    #       # 部署打包目录
+    #       folder: dist
+    #       # 密钥名
+    #       token: ${{ secrets.VITE_VUE_DEPLOY }}
+    #       # 分支
+    #       branch: gh-pages

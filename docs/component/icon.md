@@ -1,6 +1,6 @@
 # Icon 图标
 
-z-ui 推荐使用 xicons 作为图标库。
+k-ui 推荐使用 xicons 作为图标库。
 
 ```
 $ pnpm install @vicons/ionicons5
@@ -13,29 +13,29 @@ $ pnpm install @vicons/ionicons5
 <script setup lang="ts">
 import { CashOutline } from '@vicons/ionicons5'
 </script>
-<z-icon color="red" size="40">
+<k-icon color="red" size="40">
   <CashOutline/>
-</z-icon>
+</k-icon>
 
-<z-icon color="green" size="40">
+<k-icon color="green" size="40">
   <CashOutline/>
-</z-icon>
-<z-icon color="blue" size="40">
+</k-icon>
+<k-icon color="blue" size="40">
   <CashOutline/>
-</z-icon>
+</k-icon>
 <div>
 
-<z-icon color="red" size="60">
+<k-icon color="red" size="60">
   <CashOutline/>
-</z-icon>
+</k-icon>
 
-<z-icon color="green" size="60">
+<k-icon color="green" size="60">
   <CashOutline/>
-</z-icon>
+</k-icon>
 
-<z-icon color="blue" size="60">
+<k-icon color="blue" size="60">
   <CashOutline/>
-</z-icon>
+</k-icon>
 </div>
 
 ```vue
@@ -43,9 +43,9 @@ import { CashOutline } from '@vicons/ionicons5'
 import { CashOutline } from '@vicons/ionicons5'
 </script>
 <template>
-  <z-icon color="red" size="40">
+  <k-icon color="red" size="40">
     <CashOutline />
-  </z-icon>
+  </k-icon>
 </template>
 ```
 

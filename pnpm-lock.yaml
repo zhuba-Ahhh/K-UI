@@ -4,9 +4,11 @@ importers:
 
   .:
     specifiers:
-      '@k-ui/components': workspace:^1.0.0
-      '@k-ui/theme-chalk': workspace:^1.0.0
-      '@k-ui/utils': workspace:^1.0.0
+      '@k-ui/components': workspace:*
+      '@k-ui/hooks': workspace:*
+      '@k-ui/locale': workspace:*
+      '@k-ui/theme-chalk': workspace:*
+      '@k-ui/utils': workspace:*
       '@typescript-eslint/eslint-plugin': ^5.48.1
       '@typescript-eslint/parser': ^5.48.1
       '@vue/eslint-config-typescript': ^11.0.2
@@ -25,6 +27,8 @@ importers:
       vue: ^3.2.45
     dependencies:
       '@k-ui/components': link:packages/components
+      '@k-ui/hooks': link:packages/hooks
+      '@k-ui/locale': link:packages/locale
       '@k-ui/theme-chalk': link:packages/theme-chalk
       '@k-ui/utils': link:packages/utils
       async-validator: registry.npmmirror.com/async-validator/4.2.5
@@ -52,6 +56,12 @@ importers:
       vitepress: registry.npmmirror.com/vitepress/1.0.0-alpha.36
 
   packages/components:
+    specifiers: {}
+
+  packages/hooks:
+    specifiers: {}
+
+  packages/locale:
     specifiers: {}
 
   packages/theme-chalk:

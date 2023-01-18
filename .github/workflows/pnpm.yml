@@ -1,0 +1,35 @@
+name: Z-UI Pnpm
+
+on:
+  push:
+    # master 分支有 push 时触发
+    branches: [main]
+
+jobs:
+  deploy:
+    # 指定虚拟机环境
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7.2.1
+      - name: Install modules
+        run: pnpm install
+
+
+    #   - name: Build
+    #     # 打包
+    #     run: pnpm build
+
+    #   - name: Deploy
+    #     uses: JamesIves/github-pages-deploy-action@v4
+    #     with:
+    #       # 部署打包目录
+    #       folder: dist
+    #       # 密钥名
+    #       token: ${{ secrets.VITE_VUE_DEPLOY }}
+    #       # 分支
+    #       branch: gh-pages

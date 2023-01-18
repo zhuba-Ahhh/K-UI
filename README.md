@@ -10,7 +10,7 @@
 
 ## 技术选型
 
-- 基本 Vue3 + Ts
+- 基本 Vue3 + Ts + pnpm | npm
 - 开发服务器 Vite
 - 文档建设 Vite-Press
 - 测试工具 Vitest + Vue Test Utils
