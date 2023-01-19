@@ -13,13 +13,13 @@ import type { CSSProperties } from 'vue'
 import { createNamespace } from '@k-ui/utils/create'
 import { iconProps } from './icon'
 
-const bem = createNamespace('icon')
-const props = defineProps(iconProps)
-
 defineOptions({
   //使用插件自动导入组件
   name: 'k-icon'
 })
+
+const bem = createNamespace('icon')
+const props = defineProps(iconProps)
 
 // 计算属性来处理样式
 const style = computed<CSSProperties>(() => {
