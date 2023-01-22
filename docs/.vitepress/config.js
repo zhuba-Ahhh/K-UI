@@ -6,10 +6,10 @@ module.exports = {
     docsDir: 'docs',
     editLinks: true,
     editLinkText: '编辑此网站',
-    repo: 'https://gitee.com/login',
+    repo: 'https://github.com/zhuba-Ahhh/K-UI',
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2022-present Zi Shui'
+      copyright: 'Copyright © 2023-present Zhu Ba'
     },
     nav: [{
         text: '指南',

@@ -16,7 +16,7 @@ import { CashOutline } from '@vicons/ionicons5'
 <k-icon color="red" size="40">
   <CashOutline/>
 </k-icon>
-
+<KIcon></KIcon>
 <k-icon color="green" size="40">
   <CashOutline/>
 </k-icon>
